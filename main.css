@@ -31,7 +31,7 @@
 
 .main{
 	text-align: center;	
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	margin-top: -60px;
@@ -131,6 +131,7 @@
 	background-size: 100%;
 	z-index: 0;
 	border-radius: 50%;
+	pointer-events: none;
 }
 
 .informations-list li span{
@@ -169,6 +170,15 @@
 	height: 100%;
 }
 
+
+@media(max-width: 720px){
+	.main .container h1.title{
+		margin-top: 60px;
+	}
+	.main .container h2.title{
+		margin-bottom: 40px;
+	}
+}
 
 @media(max-width: 550px){
 
